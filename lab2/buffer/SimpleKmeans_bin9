@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10
+Relation:     iris-weka.filters.unsupervised.attribute.Discretize-B9-M-1.0-R1-4
+Instances:    150
+Attributes:   5
+              sepallength
+              sepalwidth
+              petallength
+              petalwidth
+Ignored:
+              class
+Test mode:Classes to clusters evaluation on training data 
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 3
+Within cluster sum of squared errors: 309.0
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                                                            Cluster#
+Attribute                            Full Data                     0                     1                     2
+                                         (150)                  (68)                  (30)                  (52)
+================================================================================================================
+sepallength                        '(4.7-5.1]'           '(5.9-6.3]'           '(6.3-6.7]'           '(4.7-5.1]'
+sepalwidth                    '(2.8-3.066667]'      '(2.8-3.066667]' '(3.066667-3.333333]'      '(3.333333-3.6]'
+petallength                  '(-inf-1.655556]' '(4.277778-4.933333]' '(4.933333-5.588889]'     '(-inf-1.655556]'
+petalwidth                   '(-inf-0.366667]' '(1.166667-1.433333]'      '(2.233333-inf)'     '(-inf-0.366667]'
+
+
+
+
+Time taken to build model (full training data) : 0 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       68 ( 45%)
+1       30 ( 20%)
+2       52 ( 35%)
+
+
+Class attribute: class
+Classes to Clusters:
+
+  0  1  2  <-- assigned to cluster
+  1  1 48 | Iris-setosa
+ 43  3  4 | Iris-versicolor
+ 24 26  0 | Iris-virginica
+
+Cluster 0 <-- Iris-versicolor
+Cluster 1 <-- Iris-virginica
+Cluster 2 <-- Iris-setosa
+
+Incorrectly clustered instances :	33.0	 22      %
+
