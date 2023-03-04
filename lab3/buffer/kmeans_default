@@ -1,0 +1,62 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10
+Relation:     monk1
+Instances:    124
+Attributes:   7
+              attribute#1
+              attribute#2
+              attribute#3
+              attribute#4
+              attribute#5
+              attribute#6
+Ignored:
+              class
+Test mode:Classes to clusters evaluation on training data 
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 3
+Within cluster sum of squared errors: 358.0
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                           Cluster#
+Attribute      Full Data          0          1
+                   (124)       (77)       (47)
+==============================================
+attribute#1            1          1          3
+attribute#2            3          2          3
+attribute#3            1          1          2
+attribute#4            3          1          3
+attribute#5            4          4          2
+attribute#6            2          2          1
+
+
+
+
+Time taken to build model (full training data) : 0 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       77 ( 62%)
+1       47 ( 38%)
+
+
+Class attribute: class
+Classes to Clusters:
+
+  0  1  <-- assigned to cluster
+ 40 22 | 0
+ 37 25 | 1
+
+Cluster 0 <-- 0
+Cluster 1 <-- 1
+
+Incorrectly clustered instances :	59.0	 47.5806 %
+

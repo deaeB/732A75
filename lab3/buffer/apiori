@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 20 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.05 -S -1.0 -A -c -1
+Relation:     monk1
+Instances:    124
+Attributes:   7
+              attribute#1
+              attribute#2
+              attribute#3
+              attribute#4
+              attribute#5
+              attribute#6
+              class
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.05 (6 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 19
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 33
+
+Size of set of large itemsets L(2): 141
+
+Size of set of large itemsets L(3): 59
+
+Size of set of large itemsets L(4): 1
+
+Best rules found:
+
+ 1. attribute#5=1 29 ==> class=1 29    conf:(1)
+ 2. attribute#1=3 attribute#2=3 17 ==> class=1 17    conf:(1)
+ 3. attribute#3=1 attribute#5=1 17 ==> class=1 17    conf:(1)
+ 4. attribute#5=1 attribute#6=1 16 ==> class=1 16    conf:(1)
+ 5. attribute#1=2 attribute#2=2 15 ==> class=1 15    conf:(1)
+ 6. attribute#1=3 attribute#5=1 13 ==> class=1 13    conf:(1)
+ 7. attribute#5=1 attribute#6=2 13 ==> class=1 13    conf:(1)
+ 8. attribute#2=3 attribute#5=1 12 ==> class=1 12    conf:(1)
+ 9. attribute#3=2 attribute#5=1 12 ==> class=1 12    conf:(1)
+10. attribute#1=3 attribute#2=3 attribute#6=2 12 ==> class=1 12    conf:(1)
+11. attribute#4=1 attribute#5=1 11 ==> class=1 11    conf:(1)
+12. attribute#1=2 attribute#5=1 10 ==> class=1 10    conf:(1)
+13. attribute#2=2 attribute#5=1 10 ==> class=1 10    conf:(1)
+14. attribute#1=1 attribute#2=1 9 ==> class=1 9    conf:(1)
+15. attribute#4=2 attribute#5=1 9 ==> class=1 9    conf:(1)
+16. attribute#4=3 attribute#5=1 9 ==> class=1 9    conf:(1)
+17. attribute#1=2 attribute#2=2 attribute#3=1 9 ==> class=1 9    conf:(1)
+18. attribute#1=3 attribute#2=3 attribute#3=1 9 ==> class=1 9    conf:(1)
+19. attribute#3=1 attribute#5=1 attribute#6=1 9 ==> class=1 9    conf:(1)
+20. attribute#1=1 attribute#2=3 attribute#5=4 8 ==> class=0 8    conf:(1)
+
